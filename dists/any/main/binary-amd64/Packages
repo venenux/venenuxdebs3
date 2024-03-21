@@ -1,0 +1,192 @@
+Package: anydesk
+Version: 6.0.1
+Architecture: amd64
+Maintainer: Markus Plichta <mplichta@anydesk.com>
+Installed-Size: 12990
+Depends: libc6 (>= 2.7), libgcc1 (>= 1:4.1.1), libglib2.0-0 (>= 2.16.0), libgtk2.0-0 (>= 2.20.1), libstdc++6 (>= 4.1.1), libx11-6, libxcb-shm0, libxcb1, libpango-1.0-0, libcairo2, libxrandr2 (>= 1.3), libx11-xcb1, libxtst6, libxfixes3, libxdamage1, libxkbfile1, libgtkglext1
+Recommends: libglx-mesa0, xdg-utils
+Filename: any/anydesk/anydesk_6.0.1-1_amd64.deb
+Size: 5197638
+MD5sum: 03d9e09116d70b9324fec106424d2f75
+SHA1: 5e9cdae15fcfe9ad1a3f7af41e5adb12f0bf7d24
+SHA256: d1a576d6e757a7f82b10e6e3c27d19cb84c25e4add8fe50545d23ea1688df485
+Section: network
+Priority: optional
+Homepage: https://www.anydesk.com/
+Description: AnyDesk is the fastest remote desktop software on the market. It allows for new usage scenarios and applications that have not been possible with current remote desktop software.
+
+Package: anydesk
+Version: 6.2.1
+Architecture: amd64
+Maintainer: AnyDesk Software GmbH <linux-support@anydesk.com>
+Installed-Size: 15910
+Depends: libc6 (>= 2.7), libgcc1 (>= 1:4.1.1), libglib2.0-0 (>= 2.16.0), libgtk2.0-0 (>= 2.20.1), libstdc++6 (>= 4.1.1), libx11-6, libxcb-shm0, libxcb1, libpango-1.0-0, libcairo2, libxrandr2 (>= 1.3), libx11-xcb1, libxtst6, libxfixes3, libxdamage1, libxkbfile1, libgtkglext1
+Recommends: libglx-mesa0, xdg-utils
+Filename: any/anydesk/anydesk_6.2.1-1_amd64.deb
+Size: 6616686
+MD5sum: 9fabd3e91862c8ebed9524274e5920f0
+SHA1: 9616916a484ae8effc2f80c84950b42cfe1fd92f
+SHA256: 0428029fa9f7fb23c593fad76cfbf94c18f1c84af7aebd69720962dd5c8b77b7
+Section: net
+Priority: optional
+Homepage: https://anydesk.com/
+Description: The fastest remote desktop software on the market.
+  It allows for new usage scenarios and applications that have not been possible with current remote desktop software.
+
+Package: brave-keyring
+Version: 1.13
+Architecture: all
+Maintainer: Brave Software <support@brave.com>
+Filename: any/keyring/brave-keyring_1.13_all.deb
+Size: 4168
+MD5sum: 6b377fc92470a605aeefb47588bcb9d4
+SHA1: dd3459300abbbf77a05edf5b1dbe95b044439322
+SHA256: 0e5c33f32d908a6846b890c5d225f1a0cdebe96fea02879b776fa02877714dd2
+Priority: optional
+Description: Brave Browser keyring and repository files
+
+Package: codium
+Version: 1.84.2.23317
+Architecture: amd64
+Maintainer: VSCodium Team https://github.com/VSCodium/vscodium/graphs/contributors
+Installed-Size: 340375
+Depends: ca-certificates, libasound2 (>= 1.0.17), libatk-bridge2.0-0 (>= 2.5.3), libatk1.0-0 (>= 2.2.0), libatspi2.0-0 (>= 2.9.90), libc6 (>= 2.14), libc6 (>= 2.15), libc6 (>= 2.17), libc6 (>= 2.4), libc6 (>= 2.8), libcairo2 (>= 1.6.0), libcups2 (>= 1.6.0), libcurl3-gnutls | libcurl3-nss | libcurl4 | libcurl3, libdbus-1-3 (>= 1.5.12), libdrm2 (>= 2.4.75), libexpat1 (>= 2.0.1), libgbm1 (>= 17.1.0~rc2), libglib2.0-0 (>= 2.37.3), libgssapi-krb5-2, libgtk-3-0 (>= 3.9.10), libgtk-3-0 (>= 3.9.10) | libgtk-4-1, libkrb5-3, libnspr4 (>= 2:4.9-2~), libnss3 (>= 2:3.30), libnss3 (>= 3.26), libpango-1.0-0 (>= 1.14.0), libstdc++6 (>= 5), libstdc++6 (>= 6), libx11-6, libx11-6 (>= 2:1.4.99.1), libxcb1 (>= 1.9.2), libxcomposite1 (>= 1:0.4.4-1), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxkbcommon0 (>= 0.4.1), libxkbfile1, libxrandr2, xdg-utils (>= 1.0.2)
+Recommends: libvulkan1
+Conflicts: visual-studio-codium
+Replaces: visual-studio-codium
+Provides: visual-studio-codium
+Filename: any/codium/codium_1.84.2.23317_amd64.deb
+Size: 87245432
+MD5sum: f300afdcfa83c925d25ce9129d93828a
+SHA1: b20889f86e9690ee9d29985b8c268cee236cef54
+SHA256: 8bc6b70bb6a721720d3355f3d97adb74de49767cedeea7d1350e78abf73a05a0
+Section: devel
+Priority: optional
+Homepage: https://vscodium.com/
+Description: Code editing. Redefined.
+ VSCodium is a new choice of tool that combines the simplicity of
+ a code editor with what developers need for the core edit-build-debug cycle.
+ See https://vscodium.com/docs/setup/linux for installation
+ instructions and FAQ.
+
+Package: la-capitaine-cursor-theme
+Version: 2.1-1-0.1~mx17+1
+Architecture: all
+Maintainer: Steven Pusser <stevep@mxlinux.org>
+Installed-Size: 1947
+Depends: gnome-themes-standard (>= 3.18.0)
+Filename: any/thememac/la-capitaine-cursor-theme_2.1-1-0.1~mx17+1_all.deb
+Size: 151970
+MD5sum: 65cbef631e2c072343076d873c74aa32
+SHA1: fa56d9a30aaef5359f52a7c657e0b4eb5664917c
+SHA256: 2a2a0a74c1415d563e11a4783f3e9e97db707c3281ad693512c0d687a1c30b54
+Section: x11
+Priority: optional
+Homepage: https://github.com/keeferrourke/capitaine-cursors
+Description: cursor theme inspired by macOS and based on KDE Breeze
+ The source files were made in Inkscape, and the theme was designed to pair well
+ with the la-capitaine-icon-theme.
+Original-Maintainer: Igor Dyatlov <dyatlov.igor@gmail.com>
+
+Package: la-capitaine-icon-theme
+Version: 0.6.0-2-0.1~mx17+1
+Architecture: all
+Maintainer: Steven Pusser <stevep@mxlinux.org>
+Installed-Size: 24265
+Depends: gnome-themes-standard, gtk-update-icon-cache
+Filename: any/thememac/la-capitaine-icon-theme_0.6.0-2-0.1~mx17+1_all.deb
+Size: 1427564
+MD5sum: 392d8e2a3def02f10beaa94f7be8c37e
+SHA1: 5d430fc8528d6d4379ff12a73b8c893683a5a03e
+SHA256: 38382cc98eed46022b754c53bb75bcf358fdd052ad1309d6f7276ed511e4aa44
+Section: gnome
+Priority: optional
+Homepage: https://github.com/keeferrourke/la-capitaine-icon-theme
+Description: icon pack designed to integrate with most desktop environments
+ .
+ The set of icons takes inspiration from the latest iterations of macOS
+ and Google's Material Design through the use of visually pleasing gradients,
+ shadowing, and simple icon geometry.
+Original-Maintainer: Igor Dyatlov <dyatlov.igor@gmail.com>
+
+Package: nomachine
+Version: 8.11.3-4
+Architecture: amd64
+Maintainer: NoMachine S.a.r.l. <info@nomachine.com>
+Installed-Size: 224216
+Conflicts: nxmanager, nxwebplayer, nxserver, nxnode, nxclient, nomachine-enterprise-client, nomachine-enterprise-runner
+Replaces: nxmanager, nxwebplayer, nxserver, nxnode, nxclient, nomachine
+Filename: any/nomachine/nomachine_8.11.3_4_amd64.deb
+Size: 55836232
+MD5sum: 1a128694ee00853e59149dc8b2af1baf
+SHA1: 026662febc133d4019e53b459c35baa4c85dc660
+SHA256: 34313fd307983b609961c5388f5db3c35bd0e7ceabb3c91cafea11d69d4d059f
+Section: net
+Priority: optional
+Description: Fast and secure remote access system
+ NoMachine is a fast and secure remote access system and terminal server
+ service. It provides a full set of administration tools that make it a complete
+ desktop virtualization solution for you or for your organization.
+ .
+ This package includes all programs and libraries necessary to
+ transform your machine into a server in the cloud or a remote
+ desktop client according to your needs.
+
+Package: yarn
+Version: 1.19.2-1
+Architecture: all
+Maintainer: Yarn Developers <yarn@dan.cx>
+Installed-Size: 5272
+Recommends: nodejs
+Conflicts: nodejs (<< 4.0.0), cmdtest
+Filename: any/yarn/yarn_1.19.2_all.deb
+Size: 890338
+MD5sum: 44c8c11b3159f101f921293278e30143
+SHA1: e16be93bd8d2f97e9f9110a95c2a233ca08eb92d
+SHA256: 43843ff86a0248bd9a683cb2fe56da515dbf973b638351ce33a277b6dbf522f7
+Section: devel
+Priority: optional
+Homepage: https://yarnpkg.com/
+Description: Fast, reliable, and secure dependency management.
+ Yarn: Fast, reliable, and secure dependency management.
+ .
+ Fast: Yarn caches every package it downloads so it never needs to again. It
+ also parallelizes operations to maximize resource utilization so install times
+ are faster than ever.
+ .
+ Reliable: Using a detailed, but concise, lockfile format, and a deterministic
+ algorithm for installs, Yarn is able to guarantee that an install that worked
+ on one system will work exactly the same way on any other system.
+ .
+ Secure: Yarn uses checksums to verify the integrity of every installed package
+ before its code is executed.
+
+Package: yarn
+Version: 1.22.19-1
+Architecture: all
+Maintainer: Yarn Developers <yarn@dan.cx>
+Installed-Size: 5288
+Recommends: nodejs
+Conflicts: nodejs (<< 4.0.0), cmdtest
+Filename: any/yarn/yarn_1.22.19_all.deb
+Size: 892548
+MD5sum: 0e51db0be105335002edde38fac3ec06
+SHA1: d43bf2c6895e0b00cffb27d8b77e3230519e43dd
+SHA256: 666cc8c015bb9e36236fc355816711fbc88bbba97ce8344d3ea2a36debcf7424
+Section: devel
+Priority: optional
+Homepage: https://yarnpkg.com/
+Description: Fast, reliable, and secure dependency management.
+ Yarn: Fast, reliable, and secure dependency management.
+ .
+ Fast: Yarn caches every package it downloads so it never needs to again. It
+ also parallelizes operations to maximize resource utilization so install times
+ are faster than ever.
+ .
+ Reliable: Using a detailed, but concise, lockfile format, and a deterministic
+ algorithm for installs, Yarn is able to guarantee that an install that worked
+ on one system will work exactly the same way on any other system.
+ .
+ Secure: Yarn uses checksums to verify the integrity of every installed package
+ before its code is executed.
+

@@ -1,0 +1,19 @@
+Package: slimjet
+Version: 33.0.0.0
+Architecture: i386
+Maintainer: FlashPeak <support@flashpeak.com>
+Installed-Size: 233168
+Pre-Depends: dpkg (>= 1.14.0)
+Depends: gconf-service, libasound2 (>= 1.0.16), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.15), libcairo2 (>= 1.6.0), libcups2 (>= 1.4.0), libdbus-1-3 (>= 1.1.4), libexpat1 (>= 2.0.1), libfontconfig1 (>= 2.11), libfreetype6 (>= 2.3.9), libgcc1 (>= 1:4.1.1), libgconf-2-4 (>= 3.2.5), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.28.0), libgtk-3-0 (>= 3.3.16), libnspr4 (>= 2:4.9-2~), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libstdc++6 (>= 4.8.1), libx11-6 (>= 2:1.4.99.1), libx11-xcb1, libxcb1 (>= 1.6), libxcomposite1 (>= 1:0.3-1), libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxi6 (>= 2:1.2.99.4), libxrandr2 (>= 2:1.2.99.3), libxrender1, libxss1, libxtst6, ca-certificates, fonts-liberation, libappindicator1, libnss3 (>= 3.17.2), lsb-base (>= 4.1), xdg-utils (>= 1.0.2), wget
+Provides: www-browser
+Filename: bullseye/slimjet/slimjet_33.0.0.0_i386.deb
+Size: 77514284
+MD5sum: dc3b1d6b986c23dcd8e3aac6a598d6f2
+SHA1: 5c0b2bfab9524677381b0059a16a07f8d75b62fe
+SHA256: 96733d45a070e7a20cc9c027439b6383b6d67cc8a5c177cc1d489708710c7698
+Section: web
+Priority: optional
+Homepage: http://www.slimjet.com
+Description: Fast, smart and powerful browser based on Blink
+ Slimjet is a fast, smart and powerful web browser based on the Blink engine. It is built on top of the Chromium open source project, on which Google chrome is also based. Slimjet integrates a lot of powerful and convenient features to help users maximize their online productivity. Slimjet also includes many options and settings so that users can customize the browser to best suit their own personal preference.
+
