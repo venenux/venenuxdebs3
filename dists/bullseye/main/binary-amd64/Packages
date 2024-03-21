@@ -1,3 +1,22 @@
+Package: la-capitaine-icon-theme
+Version: 0.6.0-2-0.1~mx17+1
+Architecture: all
+Maintainer: Steven Pusser <stevep@mxlinux.org>
+Installed-Size: 24265
+Depends: gnome-themes-standard, gtk-update-icon-cache
+Filename: bullseye/thememac/la-capitaine-icon-theme_0.6.0-2-0.1~mx17+1_all.deb
+Size: 1427564
+MD5sum: 392d8e2a3def02f10beaa94f7be8c37e
+Section: gnome
+Priority: optional
+Homepage: https://github.com/keeferrourke/la-capitaine-icon-theme
+Description: icon pack designed to integrate with most desktop environments
+ .
+ The set of icons takes inspiration from the latest iterations of macOS
+ and Google's Material Design through the use of visually pleasing gradients,
+ shadowing, and simple icon geometry.
+Original-Maintainer: Igor Dyatlov <dyatlov.igor@gmail.com>
+
 Package: slimjet
 Version: 42.0.2.0
 Architecture: amd64
@@ -9,8 +28,6 @@ Provides: www-browser
 Filename: bullseye/slimjet/slimjet_42.0.2.0_amd64.deb
 Size: 96847084
 MD5sum: a8f152ad8505e41828a5f3fbf1835e52
-SHA1: 5658e7bc63f474000827b27b4bc6d9d100c3c7f2
-SHA256: f6d2598bf70d8f7660ee09e210c994901712204684a5228aa0bbf32521c7f006
 Section: web
 Priority: optional
 Homepage: https://www.slimjet.com

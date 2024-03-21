@@ -1,3 +1,22 @@
+Package: la-capitaine-icon-theme
+Version: 0.6.0-2-0.1~mx17+1
+Architecture: all
+Maintainer: Steven Pusser <stevep@mxlinux.org>
+Installed-Size: 24265
+Depends: gnome-themes-standard, gtk-update-icon-cache
+Filename: buster/thememac/la-capitaine-icon-theme_0.6.0-2-0.1~mx17+1_all.deb
+Size: 1427564
+MD5sum: 392d8e2a3def02f10beaa94f7be8c37e
+Section: gnome
+Priority: optional
+Homepage: https://github.com/keeferrourke/la-capitaine-icon-theme
+Description: icon pack designed to integrate with most desktop environments
+ .
+ The set of icons takes inspiration from the latest iterations of macOS
+ and Google's Material Design through the use of visually pleasing gradients,
+ shadowing, and simple icon geometry.
+Original-Maintainer: Igor Dyatlov <dyatlov.igor@gmail.com>
+
 Package: slimjet
 Version: 33.0.0.0
 Architecture: i386
@@ -6,11 +25,9 @@ Installed-Size: 233168
 Pre-Depends: dpkg (>= 1.14.0)
 Depends: gconf-service, libasound2 (>= 1.0.16), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.15), libcairo2 (>= 1.6.0), libcups2 (>= 1.4.0), libdbus-1-3 (>= 1.1.4), libexpat1 (>= 2.0.1), libfontconfig1 (>= 2.11), libfreetype6 (>= 2.3.9), libgcc1 (>= 1:4.1.1), libgconf-2-4 (>= 3.2.5), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.28.0), libgtk-3-0 (>= 3.3.16), libnspr4 (>= 2:4.9-2~), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libstdc++6 (>= 4.8.1), libx11-6 (>= 2:1.4.99.1), libx11-xcb1, libxcb1 (>= 1.6), libxcomposite1 (>= 1:0.3-1), libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxi6 (>= 2:1.2.99.4), libxrandr2 (>= 2:1.2.99.3), libxrender1, libxss1, libxtst6, ca-certificates, fonts-liberation, libappindicator1, libnss3 (>= 3.17.2), lsb-base (>= 4.1), xdg-utils (>= 1.0.2), wget
 Provides: www-browser
-Filename: buster/slimjet_33.0.0.0_i386.deb
+Filename: buster/slimjet/slimjet_33.0.0.0_i386.deb
 Size: 77514284
 MD5sum: dc3b1d6b986c23dcd8e3aac6a598d6f2
-SHA1: 5c0b2bfab9524677381b0059a16a07f8d75b62fe
-SHA256: 96733d45a070e7a20cc9c027439b6383b6d67cc8a5c177cc1d489708710c7698
 Section: web
 Priority: optional
 Homepage: http://www.slimjet.com
