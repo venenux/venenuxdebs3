@@ -66,6 +66,7 @@ always supporting older versions and historic packages
 | anydesk            | 6.0.0      | 6.0.0      | 6.0.0      | amd64/i386 but cannot view remote desks due SSL, 6.0.1 for amd64 and i386 |
 | brave-keyring      |   x        |     x      |     x      | need for manual brave install on our customized repos  |
 | yarn               |  1.29      | 1.29       | 1.29       | working    |
+| nerolinux          | 4.0.0      | 4.0.0      | 4.0.0      | nerolinux key provided in telegram, or inside venenux debian |
 
 Those package are only in the `any` branch component, not in `main` one of the repository index debian packages.
 
