@@ -17,10 +17,10 @@ Just add to sources list using your name distro:
 
 | Release  | Repo entry in source.list |
 | -------- | ------------------------------------------------------------- |
-| buster   | `deb https://venenux.github.io/venenuxdebs2/ buster main`    |
-| bullseye | `deb https://venenux.github.io/venenuxdebs2/ bullseye main`    |
-| bookworm | `deb https://venenux.github.io/venenuxdebs2/ bookworm main`   |
-| extra    | `deb https://venenux.github.io/venenuxdebs2/ any main`       |
+| buster   | `deb https://venenux.github.io/venenuxdebs3/ buster main`    |
+| bullseye | `deb https://venenux.github.io/venenuxdebs3/ bullseye main`    |
+| bookworm | `deb https://venenux.github.io/venenuxdebs3/ bookworm main`   |
+| extra    | `deb https://venenux.github.io/venenuxdebs3/ any main`       |
 
 Autoconfiguration can be made for more repos by using the package: [any/apt/apt-conf-vnx_0.5.0_all.deb](any/apt/apt-conf-vnx_0.5.0_all.deb)
 
@@ -67,6 +67,7 @@ always supporting older versions and historic packages
 | nomachine          | 6.12.3     | 6.12.3     | 6.12.3     | 6.9.2 also for jessie and stretch on amd64 |
 | brave-keyring      |   x        |     x      |     x      | need for manual brave install on our customized repos  |
 | yarn               |  1.29      | 1.29       | 1.29       | working    |
+| la-capitaine       | 2.1        | 2.1        | 2.1        | icon and cursor like mac os |
 | nerolinux          | 4.0.0      | 4.0.0      | 4.0.0      | nerolinux key provided in telegram, or inside venenux debian |
 
 Those package are only in the `any` branch component, not in `main` one of the repository index debian packages.
