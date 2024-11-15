@@ -33,6 +33,43 @@ Homepage: https://anydesk.com/
 Description: The fastest remote desktop software on the market.
   It allows for new usage scenarios and applications that have not been possible with current remote desktop software.
 
+Package: bpftool
+Source: linux
+Version: 5.17.13-1+reiser4.0.2
+Architecture: amd64
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 1041
+Depends: libc6 (>= 2.34), libcap2 (>= 1:2.10), libelf1 (>= 0.142), zlib1g (>= 1:1.2.3.3)
+Filename: any/reiser4-5.17-d12/bpftool_5.17.13-1+reiser4.0.2_amd64.deb
+Size: 685228
+MD5sum: 5f538cee3bf3409600927bbd721bb928
+SHA1: 9526d2a4ab863f277426cd351eed8da11814f155
+SHA256: 58992280394b1db73edceddd985e2ed10b93cb5f1b78e59273d2e0338e140da7
+Section: devel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Inspection and simple manipulation of BPF programs and maps
+ The bpftool command allows for inspection and simple modification of
+ Berkeley Packet Filter (BPF) objects on the system.
+
+Package: bpftool-dbgsym
+Source: linux
+Version: 5.17.13-1+reiser4.0.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 812
+Depends: bpftool (= 5.17.13-1+reiser4.0.2)
+Filename: any/reiser4-5.17-d12/bpftool-dbgsym_5.17.13-1+reiser4.0.2_amd64.deb
+Size: 779488
+MD5sum: 3de91af966e00e05bff69dedfbabb787
+SHA1: 5b8078ed7171963e7b60f9edfede2905d04d0165
+SHA256: a2a60f70da1b0eefbe99f5015bf29ff96f01b5abe00eaeae036e8b065073fc6a
+Section: debug
+Priority: optional
+Description: debug symbols for bpftool
+Build-Ids: 46fe06ace38bd2747540d109f1a394106704bdb3
+
 Package: brave-keyring
 Version: 1.13
 Architecture: all
@@ -45,29 +82,53 @@ SHA256: 0e5c33f32d908a6846b890c5d225f1a0cdebe96fea02879b776fa02877714dd2
 Priority: optional
 Description: Brave Browser keyring and repository files
 
-Package: codium
-Version: 1.84.2.23317
+Package: hyperv-daemons
+Source: linux
+Version: 5.17.13-1+reiser4.0.2
 Architecture: amd64
-Maintainer: VSCodium Team https://github.com/VSCodium/vscodium/graphs/contributors
-Installed-Size: 340375
-Depends: ca-certificates, libasound2 (>= 1.0.17), libatk-bridge2.0-0 (>= 2.5.3), libatk1.0-0 (>= 2.2.0), libatspi2.0-0 (>= 2.9.90), libc6 (>= 2.14), libc6 (>= 2.15), libc6 (>= 2.17), libc6 (>= 2.4), libc6 (>= 2.8), libcairo2 (>= 1.6.0), libcups2 (>= 1.6.0), libcurl3-gnutls | libcurl3-nss | libcurl4 | libcurl3, libdbus-1-3 (>= 1.5.12), libdrm2 (>= 2.4.75), libexpat1 (>= 2.0.1), libgbm1 (>= 17.1.0~rc2), libglib2.0-0 (>= 2.37.3), libgssapi-krb5-2, libgtk-3-0 (>= 3.9.10), libgtk-3-0 (>= 3.9.10) | libgtk-4-1, libkrb5-3, libnspr4 (>= 2:4.9-2~), libnss3 (>= 2:3.30), libnss3 (>= 3.26), libpango-1.0-0 (>= 1.14.0), libstdc++6 (>= 5), libstdc++6 (>= 6), libx11-6, libx11-6 (>= 2:1.4.99.1), libxcb1 (>= 1.9.2), libxcomposite1 (>= 1:0.4.4-1), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxkbcommon0 (>= 0.4.1), libxkbfile1, libxrandr2, xdg-utils (>= 1.0.2)
-Recommends: libvulkan1
-Conflicts: visual-studio-codium
-Replaces: visual-studio-codium
-Provides: visual-studio-codium
-Filename: any/codium/codium_1.84.2.23317_amd64.deb
-Size: 87245432
-MD5sum: f300afdcfa83c925d25ce9129d93828a
-SHA1: b20889f86e9690ee9d29985b8c268cee236cef54
-SHA256: 8bc6b70bb6a721720d3355f3d97adb74de49767cedeea7d1350e78abf73a05a0
-Section: devel
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 549
+Pre-Depends: init-system-helpers (>= 1.54~)
+Depends: lsb-base, libc6 (>= 2.34)
+Filename: any/reiser4-5.17-d12/hyperv-daemons_5.17.13-1+reiser4.0.2_amd64.deb
+Size: 465388
+MD5sum: 2223167c96aab065390babd329bbd20f
+SHA1: eab876a568d0585817977f14c71edd7b152d3001
+SHA256: bceedc9370e37ff3b114f02bf6976ca8bb6c5bcc7d9b14353d83df2627ebd675
+Section: admin
 Priority: optional
-Homepage: https://vscodium.com/
-Description: Code editing. Redefined.
- VSCodium is a new choice of tool that combines the simplicity of
- a code editor with what developers need for the core edit-build-debug cycle.
- See https://vscodium.com/docs/setup/linux for installation
- instructions and FAQ.
+Homepage: https://www.kernel.org/
+Description: Support daemons for Linux running on Hyper-V
+ Suite of daemons for Linux guests running on Hyper-V, consisting of
+ hv_fcopy_daemon, hv_kvp_daemon and hv_vss_daemon.
+ .
+ hv_fcopy_daemon provides the file copy service, allowing the host to copy
+ files into the guest.
+ .
+ hv_kvp_daemon provides the key-value pair (KVP) service, allowing the host
+ to get and set the IP networking configuration of the guest.  (This
+ requires helper scripts which are not currently included.)
+ .
+ hv_vss_daemon provides the volume shadow copy service (VSS), allowing the
+ host to freeze the guest filesystems while taking a snapshot.
+
+Package: hyperv-daemons-dbgsym
+Source: linux
+Version: 5.17.13-1+reiser4.0.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 78
+Depends: hyperv-daemons (= 5.17.13-1+reiser4.0.2)
+Filename: any/reiser4-5.17-d12/hyperv-daemons-dbgsym_5.17.13-1+reiser4.0.2_amd64.deb
+Size: 48624
+MD5sum: 59141f7e65a628f284a60bce00855f40
+SHA1: 7019f00cd4eab71ccdcc348521250cff9f69f132
+SHA256: f452ec8a5d819c083aae1585d884bda6071bbc1c53fac9dff9abe938493bc48d
+Section: debug
+Priority: optional
+Description: debug symbols for hyperv-daemons
+Build-Ids: 4855f54915594007c3ba9759d71af896f31aa8f4 9885768b9c87e0b24ec6f6b2d8fdd423b3b096d7 ce1883c780ad7a932a920f8945f70610705e1e6f
 
 Package: la-capitaine-cursor-theme
 Version: 2.1-1-0.1~mx17+1
@@ -109,6 +170,554 @@ Description: icon pack designed to integrate with most desktop environments
  shadowing, and simple icon geometry.
 Original-Maintainer: Igor Dyatlov <dyatlov.igor@gmail.com>
 
+Package: libcpupower-dev
+Source: linux
+Version: 5.17.13-1+reiser4.0.2
+Architecture: amd64
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 463
+Depends: libcpupower1 (= 5.17.13-1+reiser4.0.2)
+Conflicts: libcpufreq-dev
+Replaces: libcpufreq-dev
+Provides: libcpufreq-dev
+Filename: any/reiser4-5.17-d12/libcpupower-dev_5.17.13-1+reiser4.0.2_amd64.deb
+Size: 449564
+MD5sum: c53a09d54779911b7de8d82610d68bd3
+SHA1: 41a4560f4f4ddd56ba50820c7261311bf427ae69
+SHA256: 381579676ee0e4474287f541e5dcbe26b9796b5175c83dc3f1ec3a7effa16b2f
+Section: libdevel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: CPU frequency and voltage scaling tools for Linux (development files)
+ libcpupower is a library for inspecting and controlling cpufreq and
+ cpuidle tunables.
+ .
+ This package is needed to compile programs against libcpupower.
+
+Package: libcpupower1
+Source: linux
+Version: 5.17.13-1+reiser4.0.2
+Architecture: amd64
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 489
+Depends: libc6 (>= 2.34)
+Filename: any/reiser4-5.17-d12/libcpupower1_5.17.13-1+reiser4.0.2_amd64.deb
+Size: 455420
+MD5sum: 22f555bd13b92f697ff8988048a88db2
+SHA1: 673fb407186a943bec823f37132c79922023eaf1
+SHA256: 05c58746d6f35e3205b00ea687aff1089553743d9d52887ce83416fd3a22c4af
+Section: libs
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: CPU frequency and voltage scaling tools for Linux (libraries)
+ libcpupower is a library for inspecting and controlling cpufreq and
+ cpuidle tunables.
+ .
+ This package contains the shared library.
+
+Package: libcpupower1-dbgsym
+Source: linux
+Version: 5.17.13-1+reiser4.0.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 39
+Depends: libcpupower1 (= 5.17.13-1+reiser4.0.2)
+Filename: any/reiser4-5.17-d12/libcpupower1-dbgsym_5.17.13-1+reiser4.0.2_amd64.deb
+Size: 23844
+MD5sum: 71bfced138cbec21c9e4584117c8c259
+SHA1: 3a97005131f61cb2e1c4267b3bd8f28b014c6e33
+SHA256: b71eca76d4a4be5be8e17de25889cb00738ddd5669e234fc20d3d25725d8c439
+Section: debug
+Priority: optional
+Description: debug symbols for libcpupower1
+Build-Ids: 035a87140deac1764d53ce3d145801fce5f38f43
+
+Package: linux-compiler-gcc-12-x86
+Source: linux
+Version: 5.17.13-1+reiser4.0.2
+Architecture: amd64
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 452
+Depends: gcc-12
+Filename: any/reiser4-5.17-d12/linux-compiler-gcc-12-x86_5.17.13-1+reiser4.0.2_amd64.deb
+Size: 447728
+MD5sum: 239c93b2bbb3c5f00953ded58f3a3ebe
+SHA1: 68e4d48f7d4195eb9763e45a0052eed279100bc4
+SHA256: b83566e1ab545639d5076aea62aa2a986b52bb26d4de5b931bfd3516739513a6
+Section: kernel
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.kernel.org/
+Description: Compiler for Linux on x86 (meta-package)
+ This package depends on GCC of the appropriate version and architecture
+ for Linux on amd64, i386 and x32.
+
+Package: linux-config-5.17
+Source: linux
+Version: 5.17.13-1+reiser4.0.2
+Architecture: amd64
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 530
+Recommends: linux-source-5.17
+Filename: any/reiser4-5.17-d12/linux-config-5.17_5.17.13-1+reiser4.0.2_amd64.deb
+Size: 525480
+MD5sum: 079ed05fe8ffab3fa962e65995473a0c
+SHA1: e70c29089910c8696938193aabafda246e583118
+SHA256: 2c96bb80c06c6531b4e486d66469ae64abdf071ce6be4822e30fb59de6ad2a28
+Section: kernel
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.kernel.org/
+Description: Debian kernel configurations for Linux 5.17
+ This package contains the configuration files used to build the official
+ Debian kernel files, but without references to Debian's signing
+ certificates.
+ .
+ These can be used as a basis for configuring custom kernels.
+
+Package: linux-cpupower
+Source: linux
+Version: 5.17.13-1+reiser4.0.2
+Architecture: amd64
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 778
+Depends: libc6 (>= 2.34), libcap2 (>= 1:2.10), libcpupower1 (>= 5.13.9-1~exp1), libpci3 (>= 1:3.8.0)
+Filename: any/reiser4-5.17-d12/linux-cpupower_5.17.13-1+reiser4.0.2_amd64.deb
+Size: 556352
+MD5sum: 972a4e4e64f2199e8d02a35f626fbafb
+SHA1: 921fb6d8cd9bab9dd1708743b30ecf49fba1be20
+SHA256: 6711215fa24f439fc4bfe36fd7c262e0ccecc9aea4f982b90f01a52806f5afac
+Section: admin
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: CPU power management tools for Linux
+ The cpupower command allows inspection and control of cpufreq and cpuidle
+ tunables for hardware that supports these features.  It replaces
+ "cpufreq-info" and "cpufreq-set" in cpufrequtils.
+ .
+ The turbostat command reports topology, frequency, idle power-state
+ statistics, temperature and power consumption information as provided
+ by the CPU.
+ .
+ The x86_energy_perf_policy command sets a general policy on some Intel
+ CPU models for the relative importance of performance versus energy
+ savings.
+
+Package: linux-cpupower-dbgsym
+Source: linux
+Version: 5.17.13-1+reiser4.0.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 248
+Depends: linux-cpupower (= 5.17.13-1+reiser4.0.2)
+Filename: any/reiser4-5.17-d12/linux-cpupower-dbgsym_5.17.13-1+reiser4.0.2_amd64.deb
+Size: 204004
+MD5sum: 3395f6ed971af16ee9ba6cfdd10857b5
+SHA1: b74643e8a2772f3b4d040f72e630e2769ac776d9
+SHA256: 71f2d9347e95900ee4f11ae35080627e1b0e89d1eb4007868c6f8ed368a87ad7
+Section: debug
+Priority: optional
+Description: debug symbols for linux-cpupower
+Build-Ids: 2f1393d8e27e6be1952089086c99844f13851fdc 4ceccd6874fe61471cff032d7614123ae18200f3 f84ff7cfe130b86f8de120d33b529d5602d573e2
+
+Package: linux-doc
+Source: linux
+Version: 5.17.13-1+reiser4.0.2
+Architecture: all
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 10
+Depends: linux-doc-5.17 (= 5.17.13-1+reiser4.0.2)
+Filename: any/reiser4-5.17-d12/linux-doc_5.17.13-1+reiser4.0.2_all.deb
+Size: 1120
+MD5sum: f63123b538cad992716f46b7a36b71dd
+SHA1: 58fa086cc76f76e9ee0548ab08869851512f675c
+SHA256: 3ce1674c8f6265c5b428a8a3da797a6bca05e9f4c126f55ac576cb74b5dfedf5
+Section: doc
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Linux kernel specific documentation (meta-package)
+ This package depends on the package containing the documentation for the
+ latest Linux kernel.
+
+Package: linux-doc-5.17
+Source: linux
+Version: 5.17.13-1+reiser4.0.2
+Architecture: all
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 189706
+Filename: any/reiser4-5.17-d12/linux-doc-5.17_5.17.13-1+reiser4.0.2_all.deb
+Size: 34494776
+MD5sum: 2e2047ad41a54e3c937c0cfa2ba762e8
+SHA1: d70a20239c2ab9404bc46db56dc8d004f8d37330
+SHA256: 234c886b8908f1caee2ab58f061c162b899ac63ea72311a0b531df18b4c25f1d
+Section: doc
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.kernel.org/
+Description: Linux kernel specific documentation for version 5.17
+ This package provides the various README files and HTML documentation for
+ the Linux kernel version 5.17.  Plenty of information, including the
+ descriptions of various kernel subsystems, filesystems, driver-specific
+ notes and the like.  An index to the documentation is installed as
+ /usr/share/doc/linux-doc-5.17/html/index.html.
+
+Package: linux-headers-5.17.0-3+reiser4.0.2-amd64
+Source: linux
+Version: 5.17.13-1+reiser4.0.2
+Architecture: amd64
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 2841
+Depends: linux-headers-5.17.0-3+reiser4.0.2-common (= 5.17.13-1+reiser4.0.2), linux-kbuild-5.17 (>= 5.17.13-1+reiser4.0.2), linux-compiler-gcc-12-x86
+Filename: any/reiser4-5.17-d12/linux-headers-5.17.0-3+reiser4.0.2-amd64_5.17.13-1+reiser4.0.2_amd64.deb
+Size: 971128
+MD5sum: 2beeeb6de9eddf4baec76e3ef0144b46
+SHA1: 5a084a763d73de93844525ebb02092b46b6fe21f
+SHA256: 81c04a2fff6c48a5ea976449c7d54631702589e143f6fe579e8bb663ea177bfd
+Section: kernel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Header files for Linux 5.17.0-3+reiser4.0.2-amd64
+ This package provides the architecture-specific kernel header files for
+ Linux kernel 5.17.0-3+reiser4.0.2-amd64, generally used for building
+ out-of-tree kernel modules.  These files are going to be installed into
+ /usr/src/linux-headers-5.17.0-3+reiser4.0.2-amd64, and can be used for
+ building modules that load into the kernel provided by the
+ linux-image-5.17.0-3+reiser4.0.2-amd64 package.
+
+Package: linux-headers-5.17.0-3+reiser4.0.2-cloud-amd64
+Source: linux
+Version: 5.17.13-1+reiser4.0.2
+Architecture: amd64
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 1749
+Depends: linux-headers-5.17.0-3+reiser4.0.2-common (= 5.17.13-1+reiser4.0.2), linux-kbuild-5.17 (>= 5.17.13-1+reiser4.0.2), linux-compiler-gcc-12-x86
+Filename: any/reiser4-5.17-d12/linux-headers-5.17.0-3+reiser4.0.2-cloud-amd64_5.17.13-1+reiser4.0.2_amd64.deb
+Size: 728764
+MD5sum: fa3342ba81a0827df7881a0b19ae01f8
+SHA1: b959a09ce537e14e088d7eac6b9c60a337ee5eb4
+SHA256: 9987d9a91bac63cda7039e8c7d558bb3a0a790b4e1dc25a51d7bcfa82557dc17
+Section: kernel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Header files for Linux 5.17.0-3+reiser4.0.2-cloud-amd64
+ This package provides the architecture-specific kernel header files for
+ Linux kernel 5.17.0-3+reiser4.0.2-cloud-amd64, generally used for building
+ out-of-tree kernel modules.  These files are going to be installed into
+ /usr/src/linux-headers-5.17.0-3+reiser4.0.2-cloud-amd64, and can be used
+ for building modules that load into the kernel provided by the
+ linux-image-5.17.0-3+reiser4.0.2-cloud-amd64 package.
+
+Package: linux-headers-5.17.0-3+reiser4.0.2-common
+Source: linux
+Version: 5.17.13-1+reiser4.0.2
+Architecture: all
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 54447
+Filename: any/reiser4-5.17-d12/linux-headers-5.17.0-3+reiser4.0.2-common_5.17.13-1+reiser4.0.2_all.deb
+Size: 9376716
+MD5sum: b1974525e21cb1ff768b6a68cb162551
+SHA1: c7353ff80678b59ca649e5157fcaf01d7c1063b9
+SHA256: dc709975e54fe64bb018743e58fb4837fc18e5312086775fd62676464541af86
+Section: kernel
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.kernel.org/
+Description: Common header files for Linux 5.17.0-3+reiser4.0.2
+ This package provides the common kernel header files for Linux kernel
+ version 5.17.0-3+reiser4.0.2, generally used for building out-of-tree
+ kernel modules.  To obtain a complete set of headers you also need to
+ install the linux-headers-5.17.0-3+reiser4.0.2-(flavour) package, matching
+ the flavour of the kernel you intend the build for.
+
+Package: linux-headers-amd64
+Source: linux
+Version: 5.17.13-1+reiser4.0.2
+Architecture: amd64
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 10
+Depends: linux-headers-5.17.0-3+reiser4.0.2-amd64 (= 5.17.13-1+reiser4.0.2)
+Provides: linux-headers-generic
+Filename: any/reiser4-5.17-d12/linux-headers-amd64_5.17.13-1+reiser4.0.2_amd64.deb
+Size: 1192
+MD5sum: 6d407c0c862cc149fb0a0d5d8734a6b9
+SHA1: 0ca84783ea03fa283716e152d9f6e3b4eacde687
+SHA256: 85afc08e24171017dc24636aa17768abaf81485538aa241782e8fd9aaa0ba9d1
+Section: kernel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Header files for Linux amd64 configuration (meta-package)
+ This package depends on the architecture-specific header files for the
+ latest Linux kernel amd64 configuration.
+
+Package: linux-headers-cloud-amd64
+Source: linux
+Version: 5.17.13-1+reiser4.0.2
+Architecture: amd64
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 10
+Depends: linux-headers-5.17.0-3+reiser4.0.2-cloud-amd64 (= 5.17.13-1+reiser4.0.2)
+Filename: any/reiser4-5.17-d12/linux-headers-cloud-amd64_5.17.13-1+reiser4.0.2_amd64.deb
+Size: 1188
+MD5sum: 22525c69c7009ef26c209dacb5bef721
+SHA1: ce58cca2b04451c06b17639ef361facc07833b8c
+SHA256: d00e1a84f8ef661b316a782c780830d54caaf5e9ada11dcdd8a0196c8ba9e2be
+Section: kernel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Header files for Linux cloud-amd64 configuration (meta-package)
+ This package depends on the architecture-specific header files for the
+ latest Linux kernel cloud-amd64 configuration.
+
+Package: linux-image-5.17.0-3+reiser4.0.2-amd64
+Source: linux
+Version: 5.17.13-1+reiser4.0.2
+Architecture: amd64
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 375116
+Depends: kmod, linux-base (>= 4.3~), initramfs-tools (>= 0.120+deb8u2) | linux-initramfs-tool
+Recommends: firmware-linux-free, apparmor
+Suggests: linux-doc-5.17, debian-kernel-handbook, grub-pc | grub-efi-amd64 | extlinux
+Breaks: fwupdate (<< 12-7), initramfs-tools (<< 0.120+deb8u2), wireless-regdb (<< 2019.06.03-1~), xserver-xorg-input-vmmouse (<< 1:13.0.99)
+Filename: any/reiser4-5.17-d12/linux-image-5.17.0-3+reiser4.0.2-amd64_5.17.13-1+reiser4.0.2_amd64.deb
+Size: 65241848
+MD5sum: 5ea304b7cc35ce088c4ca82947b0ea40
+SHA1: edb2450dce65616d5d1c4dd8f458b1d8a23fbb52
+SHA256: aa5bb0a33a2da6a95a6a130bd86f72858b6c71f7308a18f62c3f781184834b0b
+Section: kernel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Linux 5.17 for 64-bit PCs
+ The Linux kernel 5.17 and modules for use on PCs with AMD64, Intel 64 or
+ VIA Nano processors.
+
+Package: linux-image-5.17.0-3+reiser4.0.2-cloud-amd64
+Source: linux
+Version: 5.17.13-1+reiser4.0.2
+Architecture: amd64
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 93873
+Depends: kmod, linux-base (>= 4.3~), initramfs-tools (>= 0.120+deb8u2) | linux-initramfs-tool
+Recommends: firmware-linux-free, apparmor
+Suggests: linux-doc-5.17, debian-kernel-handbook, grub-pc | grub-efi-amd64 | extlinux
+Breaks: fwupdate (<< 12-7), initramfs-tools (<< 0.120+deb8u2), wireless-regdb (<< 2019.06.03-1~), xserver-xorg-input-vmmouse (<< 1:13.0.99)
+Filename: any/reiser4-5.17-d12/linux-image-5.17.0-3+reiser4.0.2-cloud-amd64_5.17.13-1+reiser4.0.2_amd64.deb
+Size: 22522700
+MD5sum: 1f0b7a0c857ce2c8a3d7201d092967ee
+SHA1: a3b7fa10b81e02ed8c1e56ecb99c9745aeac7e6b
+SHA256: a56046b037c1e0ddbb8b2b37a58a598d72515da6f569c307740a73f305fa3bf9
+Section: kernel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Linux 5.17 for x86-64 cloud
+ The Linux kernel 5.17 and modules for use on cloud platforms including
+ Amazon EC2, Microsoft Azure, and Google Compute Engine.
+
+Package: linux-image-amd64
+Source: linux
+Version: 5.17.13-1+reiser4.0.2
+Architecture: amd64
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 13
+Depends: linux-image-5.17.0-3+reiser4.0.2-amd64 (= 5.17.13-1+reiser4.0.2)
+Provides: linux-image-generic, linux-latest-modules-5.17.0-3+reiser4.0.2-amd64, virtualbox-guest-modules, wireguard-modules (= 1.0.0)
+Filename: any/reiser4-5.17-d12/linux-image-amd64_5.17.13-1+reiser4.0.2_amd64.deb
+Size: 1488
+MD5sum: 147e4a1298e4e117560cac0c0c0013b0
+SHA1: d5dbe244abedf74a8e387e0be5ece62c096d4330
+SHA256: 65132a9acd4301aa4eb03ae5347d9c86f0c1f1ac0337b2611b7f007fd8b0191a
+Section: kernel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Linux for 64-bit PCs (meta-package)
+ This package depends on the latest Linux kernel and modules for use on PCs
+ with AMD64, Intel 64 or VIA Nano processors.
+
+Package: linux-image-cloud-amd64
+Source: linux
+Version: 5.17.13-1+reiser4.0.2
+Architecture: amd64
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 13
+Depends: linux-image-5.17.0-3+reiser4.0.2-cloud-amd64 (= 5.17.13-1+reiser4.0.2)
+Provides: linux-latest-modules-5.17.0-3+reiser4.0.2-cloud-amd64, virtualbox-guest-modules, wireguard-modules (= 1.0.0)
+Filename: any/reiser4-5.17-d12/linux-image-cloud-amd64_5.17.13-1+reiser4.0.2_amd64.deb
+Size: 1508
+MD5sum: ea56eaa5f2f652cee62c1977aacd0a6a
+SHA1: f0dcf7b81d09a40ddac0cd8f7cb1d0a0f0eac8ae
+SHA256: 86b0bc6b664b3b253cd74d8bde726ca8c1147d4f05348fee3d3173730227392e
+Section: kernel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Linux for x86-64 cloud (meta-package)
+ This package depends on the latest Linux kernel and modules for use on
+ cloud platforms including Amazon EC2, Microsoft Azure, and Google Compute
+ Engine.
+
+Package: linux-kbuild-5.17
+Source: linux
+Version: 5.17.13-1+reiser4.0.2
+Architecture: amd64
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 1518
+Depends: libc6 (>= 2.34), libelf1 (>= 0.142), libssl3 (>= 3.0.0)
+Filename: any/reiser4-5.17-d12/linux-kbuild-5.17_5.17.13-1+reiser4.0.2_amd64.deb
+Size: 695612
+MD5sum: 833facd26494ba10c12c4e37f126b9ad
+SHA1: f4118f054ffd2b83fbdf898e5dd608bb376a2867
+SHA256: da82f82e83ba1ecdcf936f0b914309322ed13791f0dc9b85ed5524e8abee3b8c
+Section: kernel
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.kernel.org/
+Description: Kbuild infrastructure for Linux 5.17
+ This package provides the kbuild infrastructure for the headers packages
+ for Linux kernel version 5.17.
+
+Package: linux-kbuild-5.17-dbgsym
+Source: linux
+Version: 5.17.13-1+reiser4.0.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 1128
+Depends: linux-kbuild-5.17 (= 5.17.13-1+reiser4.0.2)
+Filename: any/reiser4-5.17-d12/linux-kbuild-5.17-dbgsym_5.17.13-1+reiser4.0.2_amd64.deb
+Size: 987376
+MD5sum: e8c42cdd1760f1f3a34787c55d2678a3
+SHA1: b54db375ae88a9ac652ac88fc618bbcadbc778a6
+SHA256: 894f1a0a8d3c7587d3884fe467cbb1b15afa854768b2d3bfeaec5067884bd0c4
+Section: debug
+Priority: optional
+Description: debug symbols for linux-kbuild-5.17
+Build-Ids: 002eeab5a2746e88cd41126edff988bb360ff9dc 08d39e14370b8c1cb140e528be63c1f0897967aa 3ef31a030a88b101f13f45ceac0a2dc56cb9ec39 5f1928a44a2fa5d5f67a88738a82bacd6b42d5c6 87f96ddd74c7ca546bc4e7f3c341d41b19513309 949e79421f7f84efd13902a03ee715b17cc9f4e6 9aed1410a36c600dd86303523609fe577d5720d8 aaede5f5eddb5c67c3115684d09c44c59b7e753b afb3ed8d83fcf6cf325f6455b0f38daf30e2a587 b21b2f5600d81be66b44dea9b893378aae46f056 c3248ccae64df293aa58827fabbbbbe3ff9b3600 cea683592331107cba5a88987ade06638a438c99 dfdc603ecf5703e9f220edd43b1f8bff60a72e57 e810c59f17acd986e7f6a314d9ceb2de0aafd37b f5ce82f9f1e3190fbbc69a9db578c298abde3dbc
+
+Package: linux-libc-dev
+Source: linux
+Version: 5.17.13-1+reiser4.0.2
+Architecture: amd64
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 6155
+Filename: any/reiser4-5.17-d12/linux-libc-dev_5.17.13-1+reiser4.0.2_amd64.deb
+Size: 1558092
+MD5sum: 12f80747ad9349c68fe898bf2f4538a8
+SHA1: abf6ebace6acd791cbc356ae4d04ca2a6e05a5d5
+SHA256: 52d9a4d7840a8ed74cff4f12c734414ba722f9112daa2c013668574be5fe5f39
+Section: devel
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These
+ headers are used by the installed headers for GNU libc and other system
+ libraries.
+
+Package: linux-perf
+Source: linux
+Version: 5.17.13-1+reiser4.0.2
+Architecture: amd64
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 10762
+Depends: libbabeltrace1 (>= 1.5.4), libc6 (>= 2.34), libcap2 (>= 1:2.10), libdw1 (>= 0.157), libelf1 (>= 0.144), liblzma5 (>= 5.1.1alpha+20120614), libnuma1 (>= 2.0.11), libopencsd1 (>= 1.3.3), libperl5.36 (>= 5.36.0), libpython3.11 (>= 3.11.0), libslang2 (>= 2.2.4), libunwind8, libzstd1 (>= 1.5.2), zlib1g (>= 1:1.2.3.3), perl:any, python3:any
+Suggests: linux-doc-5.17
+Conflicts: linux-tools-5.17
+Replaces: linux-tools-5.17
+Provides: linux-tools-5.17
+Filename: any/reiser4-5.17-d12/linux-perf_5.17.13-1+reiser4.0.2_amd64.deb
+Size: 2459788
+MD5sum: e7a5064950db15081f462071635bb3f9
+SHA1: a0411c2d4af2bdea77fa4a5a0c24a02095b63aac
+SHA256: 5f2c982327fe91a017d610a0b3af3d14418ca10f50290338238f605f44d5801f
+Section: devel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Performance analysis tools for Linux
+ This package contains the 'perf' performance analysis tools for Linux.
+
+Package: linux-perf-dbgsym
+Source: linux
+Version: 5.17.13-1+reiser4.0.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 7921
+Depends: linux-perf (= 5.17.13-1+reiser4.0.2)
+Filename: any/reiser4-5.17-d12/linux-perf-dbgsym_5.17.13-1+reiser4.0.2_amd64.deb
+Size: 7692224
+MD5sum: e28cbe985979465785b5b74ee6c4ee23
+SHA1: 390c4336559a971fb3823281a3139db3e17b65c8
+SHA256: 743c03bb547ed6fd11fa130c40e044277f74786035d0a30fdc0fad2d6efb8ec3
+Section: debug
+Priority: optional
+Description: debug symbols for linux-perf
+Build-Ids: 0fee31bae1c87971db947f2cff3dccb27fd2eb27 1652a0e63cbda5a1cefddd851599b4e868bece8d 2db7342c96b7b30625528d4e64b616237ea0bb5b 41103024b32776b23a8f25cbbf3f584457cf34a5 5351d86d8417945ae7d09ad6badc0de4b8bb2d3c 5c319ddcff29a54b6b0ba82cd1f7832c3da0e4a1 6063d0dc8496313cdde837be39c90e371a01446a 68caa983fb283b1ccce04323b6646b021d24c571 809c5ebab3db85d3449bd5f3ebe23af6343aaedc c0e23007fe8bb015fd7f86bb806c67599243993f c5be06b5d14beffa96373439aa4ece78d4c708fd c5de7aa4bea340511538ce2e6d69d81ce9928783 c98f65ec3a75c36884b6d9b457ce20da18959710 d765516ef69b5214d76311c1a2b40286f6847ce7 db23f68990fbfa982760e52e0d61cd7d687501da dc4d8d93e2df6df3726fc444879afd7aa7919c95 dda0bb334f5b048bb912dc467403d86307ae878b f2aed419e43edd02fd1ed81c1df0c75dab363292
+
+Package: linux-source
+Source: linux
+Version: 5.17.13-1+reiser4.0.2
+Architecture: all
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 10
+Depends: linux-source-5.17 (= 5.17.13-1+reiser4.0.2)
+Filename: any/reiser4-5.17-d12/linux-source_5.17.13-1+reiser4.0.2_all.deb
+Size: 1112
+MD5sum: 0523cd9e4b7588a611c7da771009a3b8
+SHA1: 84392a356fae58969f9b1334731ff5e400a478b5
+SHA256: 275927aaa45c780cac094333329ac8d7e472c57a1ba232a0668d415b9d1d42f5
+Section: kernel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Linux kernel source (meta-package)
+ This package depends on packages containing the sources of the latest
+ Linux kernel.
+
+Package: linux-source-5.17
+Source: linux
+Version: 5.17.13-1+reiser4.0.2
+Architecture: all
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 126314
+Depends: binutils, xz-utils
+Recommends: libc6-dev | libc-dev, gcc, make, bc, bison, flex, linux-config-5.17
+Suggests: libncurses-dev | ncurses-dev, qtbase5-dev, pkg-config
+Filename: any/reiser4-5.17-d12/linux-source-5.17_5.17.13-1+reiser4.0.2_all.deb
+Size: 129368976
+MD5sum: afa392bcda8eeec7394dc69f0fc4737a
+SHA1: 838263da8fe38fbb912fd3e4d367473940801920
+SHA256: 78e331388a6f4a74396807f460cb5a72d8fc4220a27575a079b23f5cb5ad451e
+Section: kernel
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.kernel.org/
+Description: Linux kernel source for version 5.17 with Debian patches
+ This package provides source code for the Linux kernel version 5.17. This
+ source closely tracks official Linux kernel releases.  Debian's
+ modifications to that source consist of security fixes, bug fixes, and
+ features that have already been (or are believed to be) accepted by the
+ upstream maintainers.
+
+Package: linux-support-5.17.0-3+reiser4.0.2
+Source: linux
+Version: 5.17.13-1+reiser4.0.2
+Architecture: all
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 1414
+Depends: python3:any
+Filename: any/reiser4-5.17-d12/linux-support-5.17.0-3+reiser4.0.2_5.17.13-1+reiser4.0.2_all.deb
+Size: 495316
+MD5sum: 55f52ba75a0e2b414b2bfd5991836cf7
+SHA1: 6051d491af3e61af967d6545358c468a7af81af8
+SHA256: 1170fada54b77e1bb2b7d0fafeaa3af2c51ee5ee6e7faa2088a748a5b62b1242
+Section: devel
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.kernel.org/
+Description: Support files for Linux 5.17
+ This package provides support files for the Linux kernel build, e.g.
+ scripts to handle ABI information and for generation of build system meta
+ data.
+
 Package: nomachine
 Version: 8.11.3-4
 Architecture: amd64
@@ -131,6 +740,56 @@ Description: Fast and secure remote access system
  This package includes all programs and libraries necessary to
  transform your machine into a server in the cloud or a remote
  desktop client according to your needs.
+
+Package: usbip
+Source: linux (5.17.13-1+reiser4.0.2)
+Version: 2.0+5.17.13-1+reiser4.0.2
+Architecture: amd64
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 601
+Depends: usb.ids, libc6 (>= 2.34), libudev1 (>= 183), libwrap0 (>= 7.6-4~)
+Filename: any/reiser4-5.17-d12/usbip_2.0+5.17.13-1+reiser4.0.2_amd64.deb
+Size: 490656
+MD5sum: e8e5e3be8e3c8d5b858d1b48adc14f53
+SHA1: a24d3670026dd934c6f11a562bf3cdee1a9afa2d
+SHA256: 772f39380999e558411dc39ffe57c8221261300be747891a9b52b8c41c9e261b
+Section: admin
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: USB device sharing system over IP network
+ USB/IP is a system for sharing USB devices over the network.
+ .
+ To share USB devices between computers with their full functionality,
+ USB/IP encapsulates "USB requests" into IP packets and transmits them
+ between computers.
+ .
+ Original USB device drivers and applications can be used for remote USB
+ devices without any modification of them.  A computer can use remote USB
+ devices as if they were directly attached.
+ .
+ Currently USB/IP provides no access control or encryption.  It should only
+ be used in trusted environments.
+ .
+ This package provides the server component 'usbipd' and the client tool
+ 'usbip'.
+
+Package: usbip-dbgsym
+Source: linux (5.17.13-1+reiser4.0.2)
+Version: 2.0+5.17.13-1+reiser4.0.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 174
+Depends: usbip (= 2.0+5.17.13-1+reiser4.0.2)
+Filename: any/reiser4-5.17-d12/usbip-dbgsym_2.0+5.17.13-1+reiser4.0.2_amd64.deb
+Size: 145336
+MD5sum: f89de1f612496bc39e1ac242dbf6bfbe
+SHA1: 65d66c2e7c5d9ad962e46391a7c55f25e7c10e65
+SHA256: 54cb1a392adb58e1d83f50ceda51536df15d9b206efb605761ccc9f476a25120
+Section: debug
+Priority: optional
+Description: debug symbols for usbip
+Build-Ids: 6d30b1f0138817a053cde9da542e38266ad831b7 9d38549dc9a5cc473abd8df0f0831fb9f0441a70
 
 Package: yarn
 Version: 1.19.2-1

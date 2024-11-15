@@ -69,8 +69,11 @@ always supporting older versions and historic packages
 | yarn               |  1.29      | 1.29       | 1.29       | working    |
 | la-capitaine       | 2.1        | 2.1        | 2.1        | icon and cursor like mac os |
 | nerolinux          | 4.0.0      | 4.0.0      | 4.0.0      | nerolinux key provided in telegram, or inside venenux debian |
+| reiserfs4 kernel   |            |            | 5.17+4.0.4 | kernel 5.17 + reiserfs4 provided by @Metztli |
 
 Those package are only in the `any` branch component, not in `main` one of the repository index debian packages.
+
+Reiserfs4 support thanks to [Metztli Information Technology](https://metztli.it/amatlocuilin) at https://sourceforge.net/projects/metztli-reiser4/files/latest/download
 
 ##  Why this repository and why older distro
 
@@ -78,6 +81,8 @@ Some already working and good computers cannot handle a recent linux,
 linux becomes a windo like product since companies started to take into consideration, 
 and developers only see their own benefice, GNU project need more support 
 and still there are people using older things..
+
+Another reason is special packages not provided for any other place.. ony by us!
 
 ## CONTRIBUTE
 
