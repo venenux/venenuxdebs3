@@ -55,6 +55,7 @@ Older machines are not 64bit capable, so only 32bit i386 packages are provided.
 | ------------------ | ---------- | ---------- | ---------- | -------- |
 | slimjet            | 40.0.5 /33 | 40.0.5.0   | 42.0.5.0   | i386 only gets 33 as last version and only for buster |
 | zettlr             | 3.0.4      | 3.0.4      | 3.0.4      | 2024 amd64, markdon editor
+| nomachine          | 8.8.1      | 8.11.3     | 8.16.1     | best version for each one |
 
 #### extra or and non free packages
 
@@ -65,7 +66,6 @@ always supporting older versions and historic packages
 | Package            | buster     | bullseye   | bookworm   | notes    |
 | ------------------ | ---------- | ---------- | ---------- | -------- |
 | anydesk            | 6.0.0      | 6.0.0      | 6.0.0      | amd64/i386 but cannot view remote desks due SSL, 6.0.1 for amd64 and i386 |
-| nomachine          | 6.12.3     | 6.12.3     | 6.12.3     | 6.9.2 also for jessie and stretch on amd64 |
 | brave-keyring      |   x        |     x      |     x      | need for manual brave install on our customized repos  |
 | yarn               |  1.29      | 1.29       | 1.29       | working    |
 | la-capitaine       | 2.1        | 2.1        | 2.1        | icon and cursor like mac os |

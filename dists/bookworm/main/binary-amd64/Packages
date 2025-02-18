@@ -19,6 +19,29 @@ Description: icon pack designed to integrate with most desktop environments
  shadowing, and simple icon geometry.
 Original-Maintainer: Igor Dyatlov <dyatlov.igor@gmail.com>
 
+Package: nomachine
+Version: 8.16.1-1
+Architecture: amd64
+Maintainer: NoMachine S.a.r.l. <info@nomachine.com>
+Installed-Size: 224552
+Conflicts: nxmanager, nxwebplayer, nxserver, nxnode, nxclient, nomachine-enterprise-client, nomachine-enterprise-runner
+Replaces: nxmanager, nxwebplayer, nxserver, nxnode, nxclient, nomachine
+Filename: bookworm/nomachine/nomachine_8.16.1_1_amd64.deb
+Size: 55056726
+MD5sum: 5f532dc1fd35238c3c9bf090ba45acf3
+SHA1: f70c9f7454e1d9b178bbce12698dba21877ac215
+SHA256: a1882f107d6da058eeae12b5e4685be8cdde17dc6b2c49abdedf938961de04cc
+Section: net
+Priority: optional
+Description: Fast and secure remote access system
+ NoMachine is a fast and secure remote access system and terminal server
+ service. It provides a full set of administration tools that make it a complete
+ desktop virtualization solution for you or for your organization.
+ .
+ This package includes all programs and libraries necessary to
+ transform your machine into a server in the cloud or a remote
+ desktop client according to your needs.
+
 Package: slimjet
 Version: 42.0.2.0
 Architecture: amd64
@@ -39,18 +62,18 @@ Description: Fast, smart and powerful browser based on Blink
  Slimjet is a fast, smart and powerful web browser based on the Blink engine. It is built on top of the Chromium open source project, on which Google chrome is also based. Slimjet integrates a lot of powerful and convenient features to help users maximize their online productivity. Slimjet also includes many options and settings so that users can customize the browser to best suit their own personal preference.
 
 Package: zettlr
-Version: 3.4.1
+Version: 3.0.4
 Architecture: amd64
 Maintainer: Hendrik Erz
-Installed-Size: 481947
+Installed-Size: 440008
 Depends: libgtk-3-0, libnotify4, libnss3, libxtst6, xdg-utils, libatspi2.0-0, libdrm2, libgbm1, libxcb-dri3-0, kde-cli-tools | kde-runtime | trash-cli | libglib2.0-bin | gvfs-bin
-Recommends: pulseaudio | libasound2, quarto, pandoc, texlive | texlive-base | texlive-full
+Recommends: pulseaudio | libasound2, quarto, pandoc, tex-live
 Suggests: gir1.2-gnomekeyring-1.0, libgnome-keyring0, lsb-release
-Filename: bookworm/editors/zettlr-3.4.1_amd64.deb
-Size: 109085364
-MD5sum: 76d1f35a721de7b484079967aad4143e
-SHA1: 3a2d83e6d9f6ee555c771494a121f4294aa8b688
-SHA256: bf8222f32310cd07d6918ee37d25ccda1e2a7a072016e5a9552d0337d9818a16
+Filename: bookworm/editors/zettlr-3.0.4_amd64.deb
+Size: 100131568
+MD5sum: 50b1260b99fecc8e1078f3bef1404583
+SHA1: 73f6c22d0a224996def6927806a0e887b69ff800
+SHA256: 0585c61ee042194a10f43fc7b6cd085be1ac62933cb4991a7a885dedd3e785ce
 Section: editors
 Priority: optional
 Homepage: https://www.zettlr.com
