@@ -54,6 +54,7 @@ Older machines are not 64bit capable, so only 32bit i386 packages are provided.
 | Package            | buster     | bullseye   | bookworm   | notes    |
 | ------------------ | ---------- | ---------- | ---------- | -------- |
 | slimjet            | 40.0.5 /33 | 40.0.5.0   | 42.0.5.0   | i386 only gets 33 as last version and only for buster |
+| zettlr             | 3.0.4      | 3.0.4      | 3.0.4      | 2024 amd64, markdon editor
 
 #### extra or and non free packages
 
@@ -70,6 +71,7 @@ always supporting older versions and historic packages
 | la-capitaine       | 2.1        | 2.1        | 2.1        | icon and cursor like mac os |
 | nerolinux          | 4.0.0      | 4.0.0      | 4.0.0      | nerolinux key provided in telegram, or inside venenux debian |
 | reiserfs4 kernel   |            |            | 5.17+4.0.4 | kernel 5.17 + reiserfs4 provided by @Metztli |
+| zettlr             | 1.2 - 2.4  | 1.2 - 2.4  | 2.0 - 3.0  | 2024 last, markdon editor older versions for custom setup |
 
 Those package are only in the `any` branch component, not in `main` one of the repository index debian packages.
 

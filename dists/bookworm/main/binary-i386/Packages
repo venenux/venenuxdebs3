@@ -7,6 +7,8 @@ Depends: gnome-themes-standard, gtk-update-icon-cache
 Filename: bookworm/thememac/la-capitaine-icon-theme_0.6.0-2-0.1~mx17+1_all.deb
 Size: 1427564
 MD5sum: 392d8e2a3def02f10beaa94f7be8c37e
+SHA1: 5d430fc8528d6d4379ff12a73b8c893683a5a03e
+SHA256: 38382cc98eed46022b754c53bb75bcf358fdd052ad1309d6f7276ed511e4aa44
 Section: gnome
 Priority: optional
 Homepage: https://github.com/keeferrourke/la-capitaine-icon-theme
@@ -28,6 +30,8 @@ Provides: www-browser
 Filename: bookworm/slimjet/slimjet_33.0.0.0_i386.deb
 Size: 77514284
 MD5sum: dc3b1d6b986c23dcd8e3aac6a598d6f2
+SHA1: 5c0b2bfab9524677381b0059a16a07f8d75b62fe
+SHA256: 96733d45a070e7a20cc9c027439b6383b6d67cc8a5c177cc1d489708710c7698
 Section: web
 Priority: optional
 Homepage: http://www.slimjet.com

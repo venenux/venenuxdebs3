@@ -7,6 +7,8 @@ Depends: gnome-themes-standard, gtk-update-icon-cache
 Filename: bullseye/thememac/la-capitaine-icon-theme_0.6.0-2-0.1~mx17+1_all.deb
 Size: 1427564
 MD5sum: 392d8e2a3def02f10beaa94f7be8c37e
+SHA1: 5d430fc8528d6d4379ff12a73b8c893683a5a03e
+SHA256: 38382cc98eed46022b754c53bb75bcf358fdd052ad1309d6f7276ed511e4aa44
 Section: gnome
 Priority: optional
 Homepage: https://github.com/keeferrourke/la-capitaine-icon-theme
@@ -28,9 +30,30 @@ Provides: www-browser
 Filename: bullseye/slimjet/slimjet_42.0.2.0_amd64.deb
 Size: 96847084
 MD5sum: a8f152ad8505e41828a5f3fbf1835e52
+SHA1: 5658e7bc63f474000827b27b4bc6d9d100c3c7f2
+SHA256: f6d2598bf70d8f7660ee09e210c994901712204684a5228aa0bbf32521c7f006
 Section: web
 Priority: optional
 Homepage: https://www.slimjet.com
 Description: Fast, smart and powerful browser based on Blink
  Slimjet is a fast, smart and powerful web browser based on the Blink engine. It is built on top of the Chromium open source project, on which Google chrome is also based. Slimjet integrates a lot of powerful and convenient features to help users maximize their online productivity. Slimjet also includes many options and settings so that users can customize the browser to best suit their own personal preference.
+
+Package: zettlr
+Version: 3.4.1
+Architecture: amd64
+Maintainer: Hendrik Erz
+Installed-Size: 481947
+Depends: libgtk-3-0, libnotify4, libnss3, libxtst6, xdg-utils, libatspi2.0-0, libdrm2, libgbm1, libxcb-dri3-0, kde-cli-tools | kde-runtime | trash-cli | libglib2.0-bin | gvfs-bin
+Recommends: pulseaudio | libasound2, quarto, pandoc, texlive | texlive-base | texlive-full
+Suggests: gir1.2-gnomekeyring-1.0, libgnome-keyring0, lsb-release
+Filename: bullseye/editors/zettlr-3.4.1_amd64.deb
+Size: 109085364
+MD5sum: 76d1f35a721de7b484079967aad4143e
+SHA1: 3a2d83e6d9f6ee555c771494a121f4294aa8b688
+SHA256: bf8222f32310cd07d6918ee37d25ccda1e2a7a072016e5a9552d0337d9818a16
+Section: editors
+Priority: optional
+Homepage: https://www.zettlr.com
+Description: Your one-stop publication workbench.
+ Your one-stop publication workbench.
 

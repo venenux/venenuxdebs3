@@ -672,31 +672,6 @@ Description: Linux kernel source (meta-package)
  This package depends on packages containing the sources of the latest
  Linux kernel.
 
-Package: linux-source-5.17
-Source: linux
-Version: 5.17.13-1+reiser4.0.2
-Architecture: all
-Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
-Installed-Size: 126314
-Depends: binutils, xz-utils
-Recommends: libc6-dev | libc-dev, gcc, make, bc, bison, flex, linux-config-5.17
-Suggests: libncurses-dev | ncurses-dev, qtbase5-dev, pkg-config
-Filename: any/reiser4-5.17-d12/linux-source-5.17_5.17.13-1+reiser4.0.2_all.deb
-Size: 129368976
-MD5sum: afa392bcda8eeec7394dc69f0fc4737a
-SHA1: 838263da8fe38fbb912fd3e4d367473940801920
-SHA256: 78e331388a6f4a74396807f460cb5a72d8fc4220a27575a079b23f5cb5ad451e
-Section: kernel
-Priority: optional
-Multi-Arch: foreign
-Homepage: https://www.kernel.org/
-Description: Linux kernel source for version 5.17 with Debian patches
- This package provides source code for the Linux kernel version 5.17. This
- source closely tracks official Linux kernel releases.  Debian's
- modifications to that source consist of security fixes, bug fixes, and
- features that have already been (or are believed to be) accepted by the
- upstream maintainers.
-
 Package: linux-support-5.17.0-3+reiser4.0.2
 Source: linux
 Version: 5.17.13-1+reiser4.0.2
@@ -848,4 +823,61 @@ Description: Fast, reliable, and secure dependency management.
  .
  Secure: Yarn uses checksums to verify the integrity of every installed package
  before its code is executed.
+
+Package: zettlr
+Version: 1.2.3
+Architecture: amd64
+Maintainer: Hendrik Erz <zettlr@mailbox.org>
+Installed-Size: 284429
+Depends: gconf2, gconf-service, libnotify4, libappindicator1, libxtst6, libnss3, libxss1
+Filename: any/editors/zettlr-linux-1.2.3_amd64.deb
+Size: 66125166
+MD5sum: 64e78d748c410ac30e71fc878dc8e1c3
+SHA1: 5631a1bb18314e66cfeea4271375194f7d6e877f
+SHA256: 4842bcbc01ca96475507e6d32ec551222079f7a343472f1747afb718bbd786ec
+Section: default
+Priority: optional
+Homepage: https://www.zettlr.com
+Description: Markdown editor
+  A powerful Markdown Editor with integrated tree view
+License: GPL-3.0
+Vendor: Hendrik Erz <zettlr@mailbox.org>
+
+Package: zettlr
+Version: 1.4.3
+Architecture: amd64
+Maintainer: Hendrik Erz <zettlr@mailbox.org>
+Installed-Size: 214691
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libappindicator3-1, libsecret-1-0
+Filename: any/editors/zettlr-linux-1.4.3_amd64.deb
+Size: 54816428
+MD5sum: 95809ad786311f5833aef28a6954f9f9
+SHA1: af0e656f4657caa5ccf7677765d95a1a94713581
+SHA256: f532df3baee44ccf41f47ac78371177aea373fd7aaf486a94160c13589fa9393
+Section: default
+Priority: optional
+Homepage: https://www.zettlr.com
+Description: Markdown editor
+  A powerful Markdown Editor with integrated tree view
+License: GPL-3.0
+Vendor: Hendrik Erz <zettlr@mailbox.org>
+
+Package: zettlr
+Version: 1.8.9
+Architecture: amd64
+Maintainer: Hendrik Erz <info@zettlr.com>
+Installed-Size: 385339
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libappindicator3-1, libsecret-1-0
+Filename: any/editors/zettlr-1.8.9_amd64.deb
+Size: 83671860
+MD5sum: 3ccae4c7bcc6d5b01a006f7cc6ac8102
+SHA1: 6d3adede15d4c0f01ab8a2e0977a3e8bb40597ff
+SHA256: a8e80e0d801db5137345a9333d11cbee77eb592cff993005842af13bd931f71c
+Section: default
+Priority: optional
+Homepage: https://www.zettlr.com
+Description: Markdown editor
+  A powerful Markdown editor for researchers.
+License: GPL-3.0
+Vendor: Hendrik Erz <info@zettlr.com>
 
